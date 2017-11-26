@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Trivia Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>Totally Trivia Trivia!!</h1>	
+			<h3>Time Remaining: <span id="time-remaining"></span></h3>
+			<h3 id="time-up"></h3>
+		</div>
+
+		<div class="panel text-center">
+			<div class="panel-body">
+				<p class="lead">Please answer all the questions and hit submit before the time gets over!!</p>
+				<div id="questions">
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="modal-window" class="modal text-center">
+		
+
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2>Results!!</h2>
+			</div>
+			<div class="modal-body">
+				<div>
+					<div>
+						<h3>Time is Up!!</h3>
+						<h4>Please find your scores below</h4>
+					</div>
+					<div>
+						<h4>Correct Answers: <span id="correct-answers"></span></h4>
+						<h4>Incorrect Answers: <span id="incorrect-answers"></span></h4>
+						<h4>Attempted Questions: <span id="attempted-questions"></span></h4>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button id="modal-close" type="button" class="btn btn-lg btn-primary">Close</button>
+				<button id="modal-restart" type="button" class="btn btn-lg btn-primary">Restart</button>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
